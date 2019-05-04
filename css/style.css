@@ -1,0 +1,279 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+}
+
+body {
+    overflow: hidden;
+}
+
+.lg-download {
+    display: none;
+}
+
+.gallery_wrapper {
+    display: flex;
+    background-color:#eee;
+    min-height: 100vh;    
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+.down {
+    font-size: 20px;
+    position: absolute;
+    bottom: 80px;
+    left: 50%;
+    margin-left: -8px;
+}
+.social{
+    font-size: 24px;
+    position: fixed;
+    width: 100%;
+    height:30px;
+    bottom: 30px;
+    z-index: 9;
+    display: flex;
+    justify-content: center;
+}
+.social a {
+    margin: 0 10px;
+    color: #aaa;
+    transform: all .5s;
+}
+.social a:hover {
+    color: #888;
+}
+
+.social a:last-child {
+    position: absolute;
+    right: 0;
+    margin-right: 30px;
+}
+
+.up {
+    font-size: 20px;
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    margin-left: -8px;
+}
+.up a,
+.down a {
+    color: #888;
+    text-align: center;
+    transition: all .5s;
+}
+.up a:hover,
+.down a:hover {
+    color: red;
+    font-size: 24px;   
+}
+
+.gw2 {
+    background-color:#222;
+}
+
+.gallery {
+    display: flex;
+    width: 70%;
+    align-items: center;
+    justify-content: center;
+}
+
+.item {
+    width: 10%;
+    flex-shrink: 6;
+    height: 40vh;
+    transition-duration: .3s;
+    transition-timing-function: ease-out;
+}
+
+.item:hover {
+    position: relative;
+    flex-basis: 400px;
+/*    flex-grow: 6;*/
+    flex-shrink: 0;
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.item img {
+    display: block;
+    max-height: 0%;
+    opacity:0;
+}
+
+.item:hover img {
+    max-height: 100%;
+    opacity:1;
+    transition-property: opacity;
+    transition-duration: 1s;
+    transition-timing-function: cubic-bezier(.42, 0, .58, 1);
+}
+
+.lg-sub-html {
+     font-family: 'Open Sans', sans-serif;
+}
+/*
+.item:hover img {
+    opacity: .75;
+    transition-property: opacity;
+    transition-duration: 1s;
+    transition-timing-function: cubic-bezier(.42, 0, .58, 1);
+}
+*/
+
+#lg1 .item:nth-child(1) {
+    background-color: #ccc;
+}
+
+#lg1 .item:nth-child(2) {
+    background-color: #bbb;
+}
+
+#lg1 .item:nth-child(3) {
+    background-color: #aaa;
+}
+
+#lg1 .item:nth-child(4) {
+    background-color: #999;
+}
+
+#lg1 .item:nth-child(5) {
+    background-color: #888;
+}
+
+#lg1 .item:nth-child(6) {
+    background-color: #777;
+}
+
+#lg1 .item:nth-child(7) {
+    background-color: #666;
+}
+
+#lg1 .item:nth-child(8) {
+    background-color: #555;
+}
+
+#lg1 .item:nth-child(9) {
+    background-color: #444;
+}
+
+#lg1 .item:nth-child(10) {
+    background-color: #333;
+}
+
+
+#lg1 .item:nth-child(1):hover {
+    background-color: #ccc;
+    opacity: 1;
+}
+#lg1 .item:nth-child(2):hover {
+    background-color: #ccc;
+    opacity: 1;
+}
+#lg1 .item:nth-child(3) a:hover {
+    background-color: 	#FD7279;
+    opacity: 1;
+}
+#lg1 .item:nth-child(4) a:hover {
+    background-color: #BC2F36;
+    opacity: 1;
+}
+#lg1 .item:nth-child(5) a:hover {
+    background-color: #A30008;
+    opacity: 1;
+}
+#lg1 .item:nth-child(6) a:hover {
+    background-color: #876ED7;
+    opacity: 1;
+}
+#lg1 .item:nth-child(7) a:hover {
+    background-color: #6A48D7;
+    opacity: 1;
+}
+
+#lg1 .item:nth-child(8) a:hover {
+    background-color: #3914AF;
+    opacity: 1;
+}
+#lg1 .item:nth-child(9) a:hover {
+    background-color: #412C84;
+    opacity: 2;
+}
+#lg1 .item:nth-child(10) a:hover {
+    background-color: #200772;
+    opacity: 1;
+}
+
+
+
+#lg2 .item:nth-child(1) {
+    background-color: #ccc;
+}
+#lg2 .item:nth-child(2) {
+    background-color: #bbb;
+}
+#lg2 .item:nth-child(3) {
+    background-color: #aaa;
+}
+#lg2 .item:nth-child(4) {
+    background-color: #999;
+}
+
+#lg3 .item:nth-child(1) {
+    background-color: #ccc;
+}
+
+#lg3 .item:nth-child(2) {
+    background-color: #bbb;
+}
+
+#lg3 .item:nth-child(3) {
+    background-color: #aaa;
+}
+
+#lg3 .item:nth-child(4) {
+    background-color: #999;
+}
+
+#lg3 .item:nth-child(5) {
+    background-color: #888;
+}
+
+#lg3 .item:nth-child(6) {
+    background-color: #777;
+}
+
+#lg3 .item:nth-child(7) {
+    background-color: #666;
+}
+
+
+
+.navigation {
+    display: flex;
+    background-color: #ccc;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    font-size: 200px;
+}
+
+
+.toggler {
+
+    align-items: center;
+
+
+}
+
+.nav-item {
+    color: #ccc;
+}
+
+
